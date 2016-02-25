@@ -33,6 +33,7 @@ body {
 .b-nav {
   min-width: 500px;
   background: #074f8f url(../img/navbar-bg.png);
+  margin-bottom: 25px;
 }
 .b-nav-menu {
   float: right;
@@ -40,17 +41,16 @@ body {
 }
 .b-nav-menu li {
   display: inline;
-  padding: 10px;
+
   line-height: 35px;
-}
-.b-nav-menu li:hover {
-  background: #4eabda;
 }
 .b-nav-menu a {
   display: inline-block;
+  padding: 0 10px;
   color: #60b5ed;
   line-height: 35px;
 }
+.b-nav-menu li:hover,
 .b-nav-menu a:hover {
   color: white;
   background: #4eabda;
@@ -65,9 +65,6 @@ body {
   height: 31px;
   border-right:1px solid #489cd5;
 }
-.b-nav-menu__flag {
-  padding-left: 17px;
-}
 .b-nav-menu__flag a {
   color: white;
 }
@@ -75,9 +72,6 @@ body {
     content: "\f024";
     color: white;
     padding-right: 10px;
-}
-.b-nav-menu li:last-child {
-  padding-left: 10px;
 }
 .b-nav-menu__button {
     float: right;
@@ -97,18 +91,17 @@ body {
 
 /* MAIN*/
 .b-main {
+    position: relative;
     min-width: 320px;
-    height: 615px;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
+    height: 100%;
 }
-.b-main:before {
-   content: " ";
-   margin-top: 35px;
+.wrapper {
+  position: absolute;
+  top: 50%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 .b-main__title,
 .b-main__data {
